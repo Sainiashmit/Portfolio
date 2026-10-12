@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashmit Saini | Software Engineer</title>
+<meta name="description" content="Portfolio of Ashmit Saini, a final-year B.Tech Computer Science student building full-stack and AI-powered software in Python, Java and TypeScript.">
+<meta property="og:title" content="Ashmit Saini | Software Engineer">
+<meta property="og:description" content="A proposal to build things with your team. Full-stack and AI-powered projects by Ashmit Saini.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#2A4DFF;
+  --ink:#0F1B33;
+  --body:#33405A;
+  --muted:#46526B;
+  --line:#E3E8F2;
+  --butter:#FFD84A;
+  --display:'Bricolage Grotesque',Georgia,serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;background:var(--accent);color:var(--ink);-webkit-text-size-adjust:100%}
+a{color:var(--ink);text-decoration-color:#9AA6C2;text-underline-offset:4px}
+a:hover{text-decoration-color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+.page{padding:0 20px 96px}
+.wrap{max-width:1040px;margin:0 auto}
+.deskbar{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;align-items:center;padding:24px 4px;color:#fff}
+.deskbar .name{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-0.01em}
+.deskbar nav{display:flex;flex-wrap:wrap;gap:4px 24px;font-size:16px;font-weight:500}
+.deskbar a{color:#fff;padding:8px 0}
+.sheet{background:#fff;border-radius:4px;padding:clamp(24px,5.5vw,72px);box-shadow:10px 10px 0 var(--ink)}
+.cover{display:flex;flex-wrap:wrap;gap:20px 32px;justify-content:space-between;align-items:flex-start}
+.cover p{margin:0;font-size:17px;line-height:1.5;color:var(--muted);max-width:420px}
+.stamp{display:inline-block;transform:rotate(-5deg);background:var(--butter);color:var(--ink);border:3px solid var(--ink);padding:10px 18px;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-0.01em;border-radius:4px}
+h1{margin:48px 0 0;font-family:var(--display);font-weight:800;font-size:clamp(42px,7vw,92px);line-height:.98;letter-spacing:-0.035em;max-width:900px}
+.lede{margin:32px 0 0;font-size:20px;line-height:1.6;max-width:640px;color:var(--body)}
+.facts{margin-top:40px;border-top:2px solid var(--ink)}
+.fact{display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-bottom:2px solid var(--line);font-size:18px}
+.fact b{flex:0 0 190px;font-weight:600}
+.fact span{flex:1 1 240px;color:var(--body)}
+section{margin-top:96px}
+h2{margin:0 0 24px;font-family:var(--display);font-weight:800;font-size:clamp(30px,4.4vw,48px);letter-spacing:-0.03em}
+.rows{border-top:2px solid var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:4px 24px;padding:16px 0;border-bottom:2px solid var(--line)}
+.row:last-child{border-bottom-color:var(--ink)}
+.row .k{flex:0 0 220px;font-family:var(--display);font-weight:600;font-size:19px}
+.row .v{flex:1 1 280px;font-size:18px;line-height:1.5;color:var(--body)}
+.intro{margin:0 0 24px;font-size:19px;line-height:1.6;max-width:60ch;color:var(--body)}
+.stages{display:flex;flex-wrap:wrap;gap:10px}
+.stage{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;cursor:pointer;flex:1 1 170px;min-width:0;min-height:76px;padding:14px 16px;border-radius:4px;font-family:inherit;background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.stage small{font-size:14px;font-weight:600;opacity:.85}
+.stage span{font-family:var(--display);font-weight:600;font-size:18px;line-height:1.15}
+.stage[aria-pressed="true"]{background:var(--accent);color:#fff}
+.detail{margin-top:12px;background:var(--ink);color:#fff;border-radius:4px;padding:clamp(24px,4vw,40px);display:flex;flex-wrap:wrap;gap:20px 48px;align-items:flex-start}
+.detail .left{flex:1 1 200px;min-width:0}
+.detail .step{font-size:15px;color:#B9C4DE;font-weight:500}
+.detail .title{font-family:var(--display);font-weight:800;font-size:34px;line-height:1.05;letter-spacing:-0.02em;margin-top:8px}
+.detail p{flex:2 1 320px;min-width:0;margin:0;font-size:19px;line-height:1.6;color:#E6ECF8;max-width:60ch}
+.deliv{display:flex;flex-wrap:wrap;gap:16px 48px;padding:32px 0;border-top:2px solid var(--line)}
+.deliv:first-of-type{border-top-color:var(--ink)}
+.deliv:last-of-type{border-bottom:2px solid var(--ink)}
+.deliv .side{flex:1 1 260px;min-width:0}
+.tag{display:inline-block;background:var(--butter);border:2px solid var(--ink);padding:3px 10px;font-size:14px;font-weight:600;border-radius:3px}
+.deliv h3{margin:14px 0 0;font-family:var(--display);font-weight:800;font-size:28px;line-height:1.05;letter-spacing:-0.02em}
+.deliv .stack{margin:12px 0 0;font-size:16px;line-height:1.5;color:var(--muted)}
+.deliv .main{flex:2 1 400px;min-width:0;font-size:18px;line-height:1.6;max-width:64ch}
+.deliv .main p{margin:0 0 12px}
+.deliv .main p:last-child{margin:0}
+.timeline{border-left:4px solid var(--ink);margin-left:8px;padding-left:28px;display:flex;flex-direction:column;gap:32px}
+.timeline .when{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-0.02em}
+.timeline .what{margin-top:4px;font-size:18px;line-height:1.55;color:var(--body);max-width:60ch}
+.creds{font-size:18px;line-height:1.5;border-top:2px solid var(--ink)}
+.cred{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 24px;padding:14px 0;border-bottom:2px solid var(--line)}
+.cred:last-child{border-bottom-color:var(--ink)}
+.cred a{font-weight:600}
+.cred span{color:var(--muted)}
+.invest{margin-top:96px;background:var(--butter);border:3px solid var(--ink);border-radius:4px;padding:clamp(24px,4.5vw,56px)}
+.invest h2{margin:0}
+.invest .big{margin:16px 0 0;font-family:var(--display);font-weight:800;font-size:clamp(28px,4.2vw,52px);line-height:1.05;letter-spacing:-0.03em;max-width:760px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:18px;padding:16px 28px;border-radius:4px;background:var(--ink);color:#fff;border:2px solid var(--ink)}
+.btn.alt{background:transparent;color:var(--ink)}
+.sign{margin-top:48px;font-family:var(--display);font-weight:800;font-size:40px;letter-spacing:-0.02em;border-bottom:2px solid var(--ink);display:inline-block;padding-right:64px}
+.contact{margin-top:8px;font-size:16px}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="wrap">
+
+<header class="deskbar">
+  <div class="name">Ashmit Saini</div>
+  <nav aria-label="Contact links">
+    <a href="https://github.com/Sainiashmit">GitHub</a>
+    <a href="https://www.linkedin.com/in/ashmit-saini/">LinkedIn</a>
+    <a href="mailto:sainiashmit64@gmail.com">Email</a>
+  </nav>
+</header>
+
+<main class="sheet">
+
+  <div class="cover">
+    <p>Prepared by Ashmit Saini for your engineering team, October 2026.</p>
+    <div class="stamp">Ready for 2027</div>
+  </div>
+
+  <h1>A proposal to build things with your team.</h1>
+  <p class="lede">I'm a final-year Computer Science student. I build full-stack and AI-powered software end to end, in Python, Java and TypeScript. This document covers what I can do, how I work, what I've already delivered, and the terms.</p>
+
+  <div class="facts">
+    <div class="fact"><b>Prepared for</b><span>Your engineering team</span></div>
+    <div class="fact"><b>Looking for</b><span>Software engineering internship or trainee role</span></div>
+    <div class="fact"><b>Graduating</b><span>2027, B.Tech Computer Science and Engineering</span></div>
+  </div>
+
+  <section>
+    <h2>1. Scope: what I can do</h2>
+    <div class="rows">
+      <div class="row"><div class="k">Languages</div><div class="v">Python, Java, JavaScript, TypeScript, SQL</div></div>
+      <div class="row"><div class="k">Web and APIs</div><div class="v">Next.js, FastAPI, REST APIs, HTML5, CSS3, JSON</div></div>
+      <div class="row"><div class="k">AI and machine learning</div><div class="v">LLM integration (Gemini), LangChain, RAG, prompt engineering, Scikit-learn, Pandas, NumPy</div></div>
+      <div class="row"><div class="k">Data and cloud</div><div class="v">SQL, MongoDB Atlas, AWS</div></div>
+      <div class="row"><div class="k">Fundamentals</div><div class="v">Data structures and algorithms, OOP, DBMS, operating systems</div></div>
+      <div class="row"><div class="k">Tools</div><div class="v">Git, GitHub</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Method: how I build</h2>
+    <p class="intro">This is how my Proposal Generator turns a client's PDF into a priced proposal, in the order it runs. Click a stage.</p>
+    <div class="stages" id="stages"></div>
+    <div class="detail" aria-live="polite">
+      <div class="left">
+        <div class="step" id="detail-step"></div>
+        <div class="title" id="detail-title"></div>
+      </div>
+      <p id="detail-text"></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Deliverables: what I've already shipped</h2>
+
+    <div class="deliv">
+      <div class="side">
+        <div class="tag">Deliverable A</div>
+        <h3>Automated Proposal Generator</h3>
+        <p class="stack">Python, FastAPI, LangChain, Gemini 2.0 Flash, Next.js, TypeScript</p>
+      </div>
+      <div class="main">
+        <p>An AI tool that reads a client's requirement PDF and writes a structured technical proposal with 3 deliverables: milestones, tech-stack recommendations and pricing.</p>
+        <p>The backend has 4 components: PDF parsing, retrieval, LLM integration and a deterministic pricing engine, served over REST APIs with FastAPI.</p>
+        <p>The frontend is Next.js and TypeScript, streaming results in real time over SSE.</p>
+      </div>
+    </div>
+
+    <div class="deliv">
+      <div class="side">
+        <div class="tag">Deliverable B</div>
+        <h3>E-Waste Pickup and Route Scheduling System</h3>
+        <p class="stack">Java, Python, SQL, Pandas, NumPy, Scikit-learn, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="main">
+        <p>A machine learning system that plans e-waste pickups and vehicle routes, built to cut travel distance and make better use of resources.</p>
+        <p>I handled the data preprocessing and feature engineering, then tested the scheduling model across multiple scenarios.</p>
+      </div>
+    </div>
+
+    <div class="deliv">
+      <div class="side">
+        <div class="tag">Deliverable C</div>
+        <h3>Titanic Survival Prediction</h3>
+        <p class="stack">Python, Pandas, NumPy, Scikit-learn</p>
+      </div>
+      <div class="main">
+        <p>A Logistic Regression model trained on 891 passenger records, using 4 features: age, gender, class and fare.</p>
+        <p>I validated it with accuracy and confusion-matrix metrics to see which factors predicted survival.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Timeline: where I am</h2>
+    <div class="timeline">
+      <div><div class="when">2023</div><div class="what">Started a B.Tech in Computer Science and Engineering at Chandigarh Group of Colleges, Jhanjeri.</div></div>
+      <div><div class="when">Since then</div><div class="what">3 projects shipped, 5 certificates earned, plus hackathons, coding contests and technical workshops I helped organise and lead with my college's TAC team. CGPA 7.3.</div></div>
+      <div><div class="when">2027</div><div class="what">Graduate, and ready to start with your team.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Credentials</h2>
+    <div class="creds">
+      <div class="cred"><a href="https://drive.google.com/file/d/1qk6FwS8wrRHtAIY9Eiq6RvTGVKq3krEp/view">Full Stack Development with MEAN</a><span>Nasscom</span></div>
+      <div class="cred"><a href="https://drive.google.com/file/d/1C3V5i-vtmS7Sg8FV5oGKOEnVtIWwPMin/view">Getting Started with MongoDB Atlas</a><span>MongoDB</span></div>
+      <div class="cred"><a href="https://drive.google.com/file/d/1w3LqFJKZNES0KQ_JT2XBFDsaEYDER6qC/view">Generative AI Mastermind</a><span>Outskill</span></div>
+      <div class="cred"><a href="https://drive.google.com/file/d/1qu-nOaWmOpTeg_APncs923Mw9esL5AIJ/view">Database and SQL</a><span>Infosys Springboard</span></div>
+      <div class="cred"><a href="https://drive.google.com/file/d/11IIj42L3tbB5zyGqsOYVG4hz4NG9Q46s/view">AWS Academy Graduate: Generative AI Foundations</a><span>AWS, training badge</span></div>
+    </div>
+  </section>
+
+  <div class="invest">
+    <h2>6. Investment</h2>
+    <p class="big">One internship or trainee role. Stipend and start date: let's talk.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:sainiashmit64@gmail.com?subject=Accepting%20your%20proposal">Accept this proposal</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/ashmit-saini/">Message me on LinkedIn</a>
+    </div>
+    <div class="sign">Ashmit Saini</div>
+    <div class="contact">sainiashmit64@gmail.com | <a href="https://github.com/Sainiashmit">github.com/Sainiashmit</a></div>
+  </div>
+
+</main>
+</div>
+</div>
+
+<script>
+(function () {
+  var data = [
+    { name: 'Parse the PDF', text: "Reads the client's requirement PDF and turns it into clean text the rest of the pipeline can work with." },
+    { name: 'Retrieve context', text: "Keyword-based retrieval pulls out the passages that matter, so the model answers from the client's own requirements." },
+    { name: 'Generate the proposal', text: "LangChain sends that context to Gemini 2.0 Flash, which drafts a structured technical proposal with milestones and tech-stack recommendations." },
+    { name: 'Price it', text: "A deterministic pricing engine calculates the numbers in code, so the same requirements always produce the same price." },
+    { name: 'Stream it live', text: "A Next.js and TypeScript frontend streams the result in real time over SSE, in a dark-mode interface." }
+  ];
+  var holder = document.getElementById('stages');
+  var stepEl = document.getElementById('detail-step');
+  var titleEl = document.getElementById('detail-title');
+  var textEl = document.getElementById('detail-text');
+  var buttons = [];
+
+  function select(i) {
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].setAttribute('aria-pressed', j === i ? 'true' : 'false');
+    }
+    stepEl.textContent = 'Stage ' + (i + 1) + ' of ' + data.length;
+    titleEl.textContent = data[i].name;
+    textEl.textContent = data[i].text;
+  }
+
+  data.forEach(function (d, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'stage';
+    var small = document.createElement('small');
+    small.textContent = 'Stage ' + (i + 1);
+    var span = document.createElement('span');
+    span.textContent = d.name;
+    b.appendChild(small);
+    b.appendChild(span);
+    b.addEventListener('click', function () { select(i); });
+    holder.appendChild(b);
+    buttons.push(b);
+  });
+
+  select(2);
+})();
+</script>
+</body>
+</html>
